@@ -5,6 +5,7 @@ function getCurrentvoteValueById (elementId){
   return value;
 }
 
+
 function setValueById (elementId, value){
     const voteResultElement = document.getElementById(elementId);
     const voteResult = voteResultElement.innerText;

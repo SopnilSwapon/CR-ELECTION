@@ -13,7 +13,7 @@
 
     </header>
     <main>
-        <h2 class="text-5xl font-bold text-center mt-10">CR Election of IIT Department of Jahangir Nagor UV.</h2>
+        <h2 class="text-5xl font-bold text-center mt-10">CR Election in IIT Department of Jahangir Nagor UV.</h2>
 
         <!-- Candidate Section -->
         <section class="mt-16 w-[85%] mx-auto">
@@ -21,57 +21,85 @@
             <div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                     <div class="card w-[100%] mx-auto h-[500px] bg-base-100 shadow-xl">
-                        <figure><img class="w-[85%]" src="images/rubel.jpg" alt="Shoes" /></figure>
+                        <figure><img class="w-[85%]" src="images/candidateOne.avif" alt="Shoes" /></figure>
                         <div class="card-body">
                           <h2 class="card-title text-3xl font-bold">Candidate Name: Md.Rubel Hossain</h2>
                           <p class="text-[20px]">Give me vote for selected your CR to manage our class schedule & others properly.</p>
                           <div class="card-actions flex items-center justify-end">
-                            <span class="text-3xl font-bold">Total: <span id="rubel-vote">0</span></span>
-                            <button onclick="countVoteRubel()" class="btn btn-primary text-2xl font-bold">Vote</button>
+                            <span class="text-3xl hidden font-bold">Total: <span id="rubel-vote">0</span></span>
+                            <button onclick="countVoteRubel()" class="btn btn-primary text-2xl font-bold hover:bg-green-500">Vote</button>
                           </div>
                         </div>
                       </div>
                       <!-- person 2 -->
                     <div class="card w-[100%] mx-auto h-[500px] bg-base-100 shadow-xl">
-                        <figure><img class="w-[85%] h-[100%]" src="images/Sorna.jpg" alt="Shoes" /></figure>
+                        <figure><img class="w-[85%] h-[100%]" src="images/candidateTwo.avif" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title text-3xl font-bold">Candidate Name: Mst: Sorna Akter</h2>
+                          <h2 class="card-title text-3xl font-bold">Candidate Name: MD.Rabbu islam</h2>
                           <p class="text-[20px]">Give me vote for selected your CR to manage our class schedule & others properly.</p>
                           <div class="card-actions flex items-center justify-end">
-                            <span class="text-3xl font-bold">Total: <span id="sorna-vote">0</span></span>
-                            <button onclick="countVoteSorna()" class="btn btn-primary text-2xl font-bold">Vote</button>
+                            <span class="text-3xl hidden font-bold">Total: <span id="robbu-vote">0</span></span>
+                            <button onclick="countVoteSorna()" class="btn btn-primary text-2xl font-bold hover:bg-green-500">Vote</button>
                           </div>
                         </div>
                       </div>
                       <!-- person 3 -->
                     <div class="card w-[100%] mx-auto h-[500px] bg-base-100 shadow-xl">
-                        <figure><img class="w-[85%]" src="images/Sumaiya.jpg" alt="Shoes" /></figure>
+                        <figure><img class="w-[85%]" src="images/candidateFour.avif" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title text-3xl font-bold">Candidate Name: Mst: Sumaiya akter</h2>
+                          <h2 class="card-title text-3xl font-bold">Candidate Name: Md.Milon hossain</h2>
                           <p class="text-[20px]">Give me vote for selected your CR to manage our class schedule & others properly.</p>
-                          <div class="card-actions justify-end">
-                            <button class="btn btn-primary text-2xl font-bold">Vote</button>
+                          <div class="card-actions flex items-center justify-end">
+                            <span class="text-3xl font-bold hidden">Total: <span id="milon-vote">0</span></span>
+                            <button onclick="countVoteSumaiya()" class="btn btn-primary text-2xl font-bold hover:bg-green-500">Vote</button>
                           </div>
                         </div>
                       </div>
                       <!-- person 4 -->
                     <div class="card w-[100%] mx-auto h-[500px] bg-base-100 shadow-xl">
-                        <figure><img class="w-[85%]" src="images/sapon.jpg" alt="Shoes" /></figure>
+                        <figure><img class="w-[85%]" src="images/candiDateThree.avif" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title text-3xl font-bold">Candidate Name: Md.Sapon Hossain</h2>
+                          <h2 class="card-title text-3xl font-bold">Candidate Name: Mst.Shariya akter</h2>
                           <p class="text-[20px]">Give me vote for selected your CR to manage our class schedule & others properly.</p>
-                          <div class="card-actions justify-end">
-                            <button class="btn btn-primary text-2xl font-bold">Vote</button>
+                          <div class="card-actions flex items-center justify-end">
+                            <span class="text-3xl font-bold hidden">Total: <span id="shariya-vote">0</span></span>
+                            <button onclick="countVoteSapon()" class="btn btn-primary text-2xl hover:bg-green-500 font-bold">Vote</button>
                           </div>
                         </div>
                       </div>
                     </div>
             </div>
+            <div class="flex justify-end mt-8 mb-8">
+                <button id="result-btn" onclick="my_modal_1.showModal()" class="px-10 py-5 rounded-lg bg-green-500 hover:bg-yellow-600 text-white text-3xl font-extrabold flex" >
+                    See Result
+                </button>
+                
+            </div>
+        </section>
+        <!-- Result section -->
+        <section>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <div class="modal-action">
+      <form method="dialog">
+        <p id="first-person" class="text-4xl text-center font-extrabold text-green-400"></p>
+        <h1 class="font-bold text-center">Rubel has got: <span id="rubel-got">0</span></h1>
+        <h1 class="font-bold text-center">Robbu has got: <span id="robbu-got">0</span></h1>
+        <h1 class="font-bold text-center">Milon has got: <span id="milon-got">0</span></h1>
+        <h1 class="font-bold text-center">Shariya has got: <span id="shariya-got">0</span></h1>
+        
+
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
         </section>
     </main>
     <script src="./js/utilities.js"></script>
-    <script src="./js/rubel.js"></script>
-    <script src="./js/sorna.js"></script>
+    <script src="js/persons.js"></script>
+    <script src="js/result.js"></script>
     
 </body>
 </html>
